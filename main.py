@@ -16,17 +16,17 @@ class OpenAbasBoot:
         condition = self.condition
 
         if condition == 1:
-            acesso = 'gabriel.cunha'
+            acesso = '.'
             return acesso
         elif condition == 2:
-            senha = 'Neto2133@'
+            senha = '@'
             return senha
 
         elif condition == 3:
-            acesso = 'gabriel.cunha'
+            acesso = '.'
             return acesso
         elif condition == 4:
-            senha = 'Neto2133@'
+            senha = '@'
             return senha
 
     def Sgo(self):
@@ -35,8 +35,8 @@ class OpenAbasBoot:
 
         driver.get('https://sgo.basis.com.br/')
 
-        login = 'gabriel.cunha'
-        password = 'Neto2133@'
+        login = '.'
+        password = '@'
 
         time.sleep(5)
 
@@ -52,8 +52,8 @@ class OpenAbasBoot:
     def rocket(self):
 
         driver = self.driver
-        acesso = 'Gabriel.cunha'
-        senha = 'Neto2133@'
+        acesso = '.'
+        senha = '@'
 
         driver.execute_script(
             "window.open('https://chat.basis.com.br', '_blank')")
