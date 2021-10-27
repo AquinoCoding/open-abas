@@ -7,9 +7,9 @@ class Interface:
         self.sg = sg
 
         self.informationPassword = {
-            'sgoAcess': ['Gabriel.cunha', 'Neto2133@'],
-            'linkedin': ['gabrielcatvalhoneto@gmail.com', 'neto2133'],
-            'email': ['gabriel.cunha@basis.com.br', 'g25443215'],
+            'sgoAcess': ['.', '@'],
+            'linkedin': ['@gmail.com', ''],
+            'email': ['.@.com.br', ''],
         }
 
     def main(self):
