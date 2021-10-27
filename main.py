@@ -37,17 +37,17 @@ class Boot:
         condition = self.condition
 
         if condition == 1:
-            acesso = 'Gabriel.cunha'
+            acesso = '.'
             return acesso
         if condition == 2:
-            senha = 'Neto2133@'
+            senha = '@'
             return senha
 
     def sgo(self):
         driver = self.driver
         driver.get('https://sgo.basis.com.br/')
-        #acesso = 'Gabriel.cunha'
-        #senha = 'Neto2133@'
+        #acesso = '.'
+        #senha = '@'
 
         time.sleep(5)
         clickLogin = driver.find_element_by_xpath(
@@ -62,8 +62,8 @@ class Boot:
 
     def rocket(self):
         driver = self.driver
-        #acesso = 'Gabriel.cunha'
-        #senha = 'Neto2133@'
+        #acesso = '.'
+        #senha = '@'
 
         driver.execute_script(
             "window.open('https://chat.basis.com.br', '_blank')")
@@ -84,8 +84,8 @@ class Boot:
 
     def linkedin(self):
         driver = self.driver
-        #acesso = 'gabrielcatvalhoneto@gmail.com'
-        #senha = 'neto2133'
+        #acesso = '@gmail.com'
+        #senha = ''
 
         driver.execute_script(
             "window.open('https://www.linkedin.com/login/pt?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin', '_blank')"
@@ -112,8 +112,8 @@ class Boot:
         )
         driver.switch_to.window(driver.window_handles[-1])
         time.sleep(2)
-        #email = 'gabriel.cunha@basis.com.br'
-        #senha = 'g25443215'
+        #email = ''
+        #senha = ''
         time.sleep(5)
         clickinicie = driver.find_element_by_xpath(
             "//input[@id='identifierId']").send_keys(email, Keys.ENTER)
